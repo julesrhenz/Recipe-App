@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Recipe App</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="browse_by_category">Browse by Category</string>
+    <string name="search_recipes">Search Recipes</string>
+    <string name="favorite_recipes">Favorite Recipes</string>
+    <string name="welcome_admin_chef">Welcome Admin/Chef</string>
+    <string name="add_new_recipe">Add New Recipe</string>
+    <string name="view_all_recipes">View All Recipes</string>
+    <string name="manage_categories">Manage Categories</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="instructions">Instructions</string>
+    <string name="ingredients_comma_separated">Ingredients (comma separated)</string>
+    <string name="recipe_title">Recipe Title</string>
+    <string name="search">Search</string>
+    <string name="search_by_name_or_ingredients">Search by name or ingredients</string>
+    <string name="add_category">Add Category</string>
+    <string name="new_category_name">New Category Name</string>
+    <string name="category">Category:</string>
+    <string name="save_to_favorites">Save to Favorites</string>
+    <string name="instructions_go_here">Instructions go here</string>
+    <string name="ingredients_go_here">Ingredients go here</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="login_as">Login as</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="meal_name">Meal Name</string>
+    <string name="meal_image">Meal Image</string>
+    <string name="enter_keyword">Enter keyword…</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="no_favorite_recipes_yet">No Favorite recipes yet</string>
+    <string name="logout">Logout</string>
+    <string name="available_recipe_categories">Available Recipe Categories</string>
+    <string name="delete_recipe">Delete Recipe</string>
+    <string name="image_url">Image URL</string>
+    <string name="title">Title</string>
+    <string name="update_recipe">Update Recipe</string>
+    <string name="delete">Delete</string>
+    <string name="recipe_image">Recipe Image</string>
+    <string name="welcome_to_recipe_app">Welcome to Recipe App</string>
+    <string name="registration">Registration</string>
+    <string name="logo">Logo</string>
+
+    <string-array name="roles">
+        <item>Admin</item>
+        <item>Chef</item>
+        <item>User</item>
+    </string-array>
+
+    <string-array name="search_types">
+        <item>By Name</item>
+        <item>By Ingredient</item>
+    </string-array>
+
+</resources>

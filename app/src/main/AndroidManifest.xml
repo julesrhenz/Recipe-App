@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ✅ Add this line here -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/iconics"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconics_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RecipeApp"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminChefDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddEditRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrowseCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoriteRecipesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipesByCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

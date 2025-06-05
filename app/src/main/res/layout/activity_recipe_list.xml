@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRecipeList"
+    android:layout_width="match_parent"
+    android:background="@drawable/resipi"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ProgressBar while loading recipes -->
+    <ProgressBar
+        android:id="@+id/progressBarAllRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- RecyclerView to list all recipes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAllRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progressBarAllRecipes"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

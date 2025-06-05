@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/resipi"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:layout_marginTop="100dp"
+            android:hint="@string/recipe_title"
+            android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/etIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:textColor="@color/white"
+            android:hint="@string/ingredients_comma_separated"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/etInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:autofillHints=""
+            android:gravity="top"
+            android:hint="@string/instructions"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:textColorHint="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnSaveRecipe"
+            android:text="@string/save_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00AB41" />
+
+        <EditText
+            android:id="@+id/etImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:textColor="@color/white"
+            android:hint="@string/image_url"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnDeleteRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="@string/delete_recipe"
+            android:textColor="#212121" />
+
+
+    </LinearLayout>
+</ScrollView>

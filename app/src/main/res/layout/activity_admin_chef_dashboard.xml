@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/resipi"
+    android:gravity="start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:text="@string/logout"
+        android:layout_width="93dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FF2400"/>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logogo" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginBottom="20dp"
+        android:text="@string/welcome_to_recipe_app"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnAddRecipe"
+        android:text="@string/add_new_recipe"
+        android:layout_width="300dp"
+        android:typeface="normal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:ignore="VisualLintButtonSize"
+        android:backgroundTint="#00AB41"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnViewRecipes"
+        android:text="@string/view_all_recipes"
+        android:layout_width="300dp"
+        android:typeface="normal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#00AB41"
+        tools:ignore="VisualLintButtonSize"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:text="@string/search_recipes"
+        android:layout_width="300dp"
+        android:typeface="normal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#00AB41"
+        tools:ignore="VisualLintButtonSize"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnManageCategories"
+        android:text="@string/manage_categories"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:typeface="normal"
+        android:layout_gravity="center"
+        android:backgroundTint="#00AB41"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>

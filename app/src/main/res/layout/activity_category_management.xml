@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/resipii"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="VisualLintBounds">
+
+    <EditText
+        android:id="@+id/etNewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:hint="@string/new_category_name"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnAddCategory"
+        android:text="@string/add_category"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00AB41"
+        android:layout_marginBottom="16dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Progress Bar to show while loading categories -->
+    <ProgressBar
+        android:id="@+id/progressBarCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large" />
+
+    <TextView
+        android:id="@+id/tvCategoryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/available_recipe_categories"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listViewCategories"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>

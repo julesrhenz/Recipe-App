@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resipi"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/title"
+            android:inputType="text"
+            android:layout_marginTop="30dp"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/category"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:gravity="top"
+            android:hint="@string/ingredients"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColorHint="@color/white"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:gravity="top"
+            android:hint="@string/instructions"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:textColorHint="#E8EAF6"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/etImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/image_url"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:textColorHint="#E8EAF6"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="@string/update_recipe"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00AB41"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="@string/delete_recipe"
+            android:textColor="#212121"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+</ScrollView>
